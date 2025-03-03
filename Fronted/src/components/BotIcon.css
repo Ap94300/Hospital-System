@@ -1,0 +1,32 @@
+/* components/BotIcon.css */
+.bot-icon {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px; /* Width of the background circle */
+    height: 70px; /* Height of the background circle */
+    border-radius: 50%; /* Make it circular */
+    background: linear-gradient(135deg, #af704c, #c78181); /* Gradient background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.bot-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.bot-icon img {
+    width: 40px; /* Size of the bot icon */
+    height: 40px; /* Size of the bot icon */
+    border-radius: 50%; /* Make it circular */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.bot-icon:hover img {
+    transform: rotate(360deg); /* Rotate the icon on hover */
+}

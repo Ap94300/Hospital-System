@@ -1,0 +1,81 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px; /* Adjusted padding for a more spacious look */
+    background-color: #44ff00; /* Solid green background */
+    color: white; /* Text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.logo {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px; /* Increased space between links */
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Link color */
+    font-weight: 600; /* Slightly bolder font */
+    padding: 12px 20px; /* Adjusted padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative; /* Needed for absolute positioning of dropdown menu */
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600; /* Slightly bolder font */
+    padding: 12px 20px; /* Adjusted padding for better click area */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    background-color: white; /* White background for dropdown */
+    border-radius: 5px; /* Rounded corners for dropdown */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+    margin-top: 5px; /* Space between dropdown and button */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333; /* Text color for dropdown items */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+}

@@ -1,0 +1,53 @@
+/* components/QABot.css */
+.qna-bot {
+    position: fixed;
+    bottom: 80px; /* Position above the bot icon */
+    right: 20px; /* Align with the bot icon */
+    width: 300px; /* Width of the bot */
+    background-color: white; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside the bot */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.qna-bot h2 {
+    margin: 0 0 10px; /* Margin for the title */
+    font-size: 18px; /* Font size for the title */
+}
+
+.qna-bot form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.qna-bot input {
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    margin-bottom: 10px; /* Space between input and button */
+}
+
+.qna-bot button {
+    padding: 10px; /* Padding for button */
+    background-color: #00796b; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.qna-bot button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+.qna-bot .answer {
+    margin-top: 10px; /* Space above the answer */
+    background-color: #f9f9f9; /* Background color for answer */
+    padding: 10px; /* Padding for answer */
+    border-radius: 5px; /* Rounded corners for answer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for answer */
+}

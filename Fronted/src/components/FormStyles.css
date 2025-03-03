@@ -1,0 +1,97 @@
+/* General styles for all forms */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Maximum width of the form */
+    margin: 80px auto; /* Increased top margin to create space from the navbar */
+    padding: 50px; /* Increased padding for a more spacious look */
+    border-radius: 20px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff); /* Light gradient background */
+    color: #333; /* Text color */
+}
+
+/* Sign In Page Styles */
+.signin {
+    background-image: url('https://example.com/signin-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full height */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Sign Up Page Styles */
+.signup {
+    background-image: url('https://example.com/signup-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full height */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Hospital Form Page Styles */
+.hospital-form {
+    background-image: url('https://example.com/hospital-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full height */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+select {
+    width: 90%;
+    padding: 12px; /* Increased padding for better usability */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #00796b; /* Dark teal border */
+    border-radius: 5px; /* Slightly more rounded corners */
+    font-size: 16px; /* Increased font size for better readability */
+    transition: border-color 0.4s ease; /* Smooth transition for border color */
+    background-color: #ffffff; /* White background for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #00796b; /* Dark teal button color */
+    color: white;
+    padding: 12px; /* Increased padding for better usability */
+    border: none;
+    border-radius: 5px; /* Slightly more rounded corners */
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Increased font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #005b4d; /* Darker shade on hover */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px; /* Adjusted font size for paragraph */
+    color: #555; /* Dark gray color for text */
+}

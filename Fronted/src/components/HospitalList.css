@@ -1,0 +1,63 @@
+/* Main container for the hospital list */
+.hospital-list {
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #ffffff); /* Light gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 800px; /* Maximum width */
+    margin: 20px auto; /* Center the list */
+}
+
+/* Title styling */
+.hospital-list h2 {
+    text-align: center; /* Center the title */
+    color: #00796b; /* Dark teal color for the title */
+}
+
+/* Dropdown styling */
+.hospital-list select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for the dropdown */
+    margin: 10px 0; /* Margin for spacing */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #00796b; /* Dark teal border */
+    background-color: #ffffff; /* White background for dropdown */
+}
+
+/* Container for hospital cards */
+.hospital-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: space-between; /* Space between cards */
+}
+
+/* Individual hospital card styling */
+.hospital-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ccc; /* Border for cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    margin: 10px; /* Margin around each card */
+    flex: 1 1 calc(30% - 20px); /* Flexbox properties for responsive layout */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    background: linear-gradient(to bottom right, #f1f8e9, #ffffff); /* Light green gradient for cards */
+}
+
+/* Hover effect for cards */
+.hospital-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Hospital name styling */
+.hospital-card h3 {
+    margin: 0 0 10px; /* Margin for the hospital name */
+    color: #388e3c; /* Dark green color for hospital names */
+}
+
+/* Paragraph styling */
+.hospital-card p {
+    margin: 5px 0; /* Margin for paragraphs */
+    color: #555; /* Dark gray color for text */
+}
